@@ -1,0 +1,38 @@
+<section>
+    <h3>Interpolação</h3>
+    <br/>
+    <p>{{nome}}</p>
+    <p>Seja bem-vindo(a), {{ nome}}</p>
+    <p>Você tem {{ idade }} anos.</p>
+    <p> {{ nome | uppercase}}</p>
+    <p>Soma de 1 + 1 é: {{1 + 1}}</p>
+    <p>Você nasceu em: {{ calculaAnoNascimento() }}</p>
+  </section>
+    <section>
+
+      <h3>Event Binding</h3>
+      <hr />
+    <!-- <img
+     src="{{ linkImagem }}"
+     height="{{ alturaImagem}}"
+     width="{{ larguraImagem}}"
+     alt=""
+     /> -->
+
+     <!-- Property binding -->
+      <img
+     [src]="linkImagem"
+     [height]="alturaImagem"
+     [width]="larguraImagem"
+     alt=""
+     />
+
+     <br />
+      <p> {{ larguraImagem}} x {{ alturaImagem}} </p>
+     <button (click)="aumentar()">Aumentar</button>
+     <button (click)="diminuir()">Diminuir</button>
+
+    </section>
+
+
+
