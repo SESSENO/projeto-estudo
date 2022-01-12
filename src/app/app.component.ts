@@ -3,16 +3,17 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  nome = 'Sérgio Sena';
-  idade = 51;
-  title = 'projeto-estudo';
-  alturaImagem=30;
-  larguraImagem=30;
+  nome = 'José Almir';
+  idade = 25;
 
-  linkImagem ='https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027.jpg';
+  linkImagem =
+    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80';
+
+  larguraImagem = 30;
+  alturaImagem = 30;
 
   calculaAnoNascimento(): number {
     const today = new Date();
@@ -29,5 +30,4 @@ export class AppComponent {
     this.larguraImagem -= 20;
     this.alturaImagem -= 15;
   }
-
 }
