@@ -3,6 +3,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgModule } from '@angular/core';
 import { Route, RouterModule } from '@angular/router';
 import { PipesComponent } from './pipes/pipes.component';
+import { CriacaoPipesComponent } from './criacao-pipes/criacao-pipes.component';
 
 const routes: Route[] = [
   {
@@ -17,6 +18,11 @@ const routes: Route[] = [
     path: 'pipes',
     component: PipesComponent,
   },
+  {
+    path: 'criacao-pipes',
+    component: CriacaoPipesComponent
+  }
+
 ];
 
 @NgModule({

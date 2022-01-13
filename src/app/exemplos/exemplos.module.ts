@@ -6,6 +6,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { ExemplosRoutingModule } from './exemplos-routing.module';
 import { DiretivasComponent } from './diretivas/diretivas.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { CriacaoPipesComponent } from './criacao-pipes/criacao-pipes.component';
+import { CompartilhadoModule } from './../compartilhado/compartilhado.module';
 
 
 
@@ -13,12 +15,14 @@ import { PipesComponent } from './pipes/pipes.component';
   declarations: [
     DataBindingComponent,
     DiretivasComponent,
-    PipesComponent
+    PipesComponent,
+    CriacaoPipesComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
-    ExemplosRoutingModule
+    ExemplosRoutingModule,
+    CompartilhadoModule
   ],
   exports: [
     DataBindingComponent
