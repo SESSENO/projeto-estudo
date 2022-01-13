@@ -8,6 +8,8 @@ import { DiretivasComponent } from './diretivas/diretivas.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { CriacaoPipesComponent } from './criacao-pipes/criacao-pipes.component';
 import { CompartilhadoModule } from './../compartilhado/compartilhado.module';
+import { AppSorteioComponent } from './app-sorteio/app-sorteio.component';
+import { AppGithubComponent } from './app-github/app-github.component';
 
 
 
@@ -16,7 +18,9 @@ import { CompartilhadoModule } from './../compartilhado/compartilhado.module';
     DataBindingComponent,
     DiretivasComponent,
     PipesComponent,
-    CriacaoPipesComponent
+    CriacaoPipesComponent,
+    AppSorteioComponent,
+    AppGithubComponent
   ],
   imports: [
     CommonModule,
